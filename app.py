@@ -448,18 +448,21 @@ with st.sidebar:
 
             "container": {
 
-                "padding": "0px",
+                "padding": "16px",
 
                 "background-color":
-                "transparent",
+                "#252731",
 
                 "border":
-                "none",
+                "1px solid rgba(255,255,255,0.04)",
 
                 "box-shadow":
-                "none",
+                "0 10px 26px rgba(0,0,0,0.22)",
 
                 "margin":
+                "0px",
+
+                "border-radius":
                 "0px"
             },
 
