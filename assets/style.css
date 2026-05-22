@@ -1,0 +1,2738 @@
+/* =========================================
+   GOOGLE FONT
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+html,
+body,
+[class*="css"] {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* =========================================
+   MAIN BACKGROUND
+========================================= */
+.stApp {
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f4ef 0%,
+            #f3eee8 50%,
+            #f7f2eb 100%
+        );
+}
+
+
+/* =========================================
+   SIDEBAR PREMIUM
+========================================= */
+section[data-testid="stSidebar"] {
+
+    background:
+
+        radial-gradient(
+            circle at top left,
+            rgba(255,140,0,0.18),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at bottom,
+            rgba(255,120,0,0.15),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            180deg,
+            #1a0f0a 0%,
+            #2d1a12 35%,
+            #3a2418 100%
+        );
+
+    border-right:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        inset -8px 0 20px rgba(255,140,0,0.08);
+}
+
+
+/* =========================================
+   SIDEBAR TEXT ONLY
+========================================= */
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] div {
+
+    color: white;
+}
+
+
+/* =========================================
+   SIDEBAR LOGO
+========================================= */
+.sidebar-logo-container {
+
+    padding: 14px;
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.04),
+            rgba(255,255,255,0.01)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,0.45),
+
+        inset 0 1px 0 rgba(255,255,255,0.04),
+
+        0 0 20px rgba(255,140,0,0.12);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+
+.sidebar-logo-container:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 18px 40px rgba(0,0,0,0.55),
+
+        0 0 28px rgba(255,140,0,0.16);
+}
+
+
+/* =========================================
+   SIDEBAR TITLE
+========================================= */
+.sidebar-title {
+
+    color: #f5d7b2;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   SIDEBAR SUBTITLE
+========================================= */
+.sidebar-subtitle {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: white;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   OPTION MENU HOVER
+========================================= */
+.nav-link:hover {
+
+    transform:
+        translateX(4px);
+
+    background:
+        rgba(255,255,255,0.06) !important;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================
+   FILE UPLOADER PREMIUM
+========================================= */
+[data-testid="stFileUploader"] {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,170,70,0.10),
+            rgba(255,120,0,0.03)
+        ) !important;
+
+    padding: 18px !important;
+
+    border-radius: 22px !important;
+
+    border:
+        1px dashed rgba(255,255,255,0.22) !important;
+
+    box-shadow:
+
+        0 8px 24px rgba(0,0,0,0.25),
+
+        inset 0 1px 0 rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+[data-testid="stFileUploader"]:hover {
+
+    border:
+        1px dashed rgba(255,220,180,0.45) !important;
+
+    box-shadow:
+
+        0 12px 30px rgba(0,0,0,0.35),
+
+        0 0 15px rgba(255,140,0,0.12);
+}
+
+
+/* =========================================
+   DROPZONE
+========================================= */
+[data-testid="stFileUploaderDropzone"] {
+
+    background: transparent !important;
+
+    border: none !important;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+[data-testid="stFileUploader"] label {
+
+    color: #dd7d08 !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   BROWSE BUTTON
+========================================= */
+[data-testid="stBaseButton-secondary"] {
+
+    background:
+        rgba(255,255,255,0.08) !important;
+
+    border:
+        1px solid rgba(255,255,255,0.08) !important;
+
+    color:
+        white !important;
+
+    border-radius: 12px !important;
+}
+
+
+/* =========================================
+   INFO SIDEBAR CARD
+========================================= */
+.info-sidebar-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,170,70,0.12),
+            rgba(255,120,0,0.04)
+        );
+
+    padding: 22px;
+
+    border-radius: 24px;
+
+    color: #f8e6d2;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    box-shadow:
+
+        0 8px 24px rgba(0,0,0,0.28),
+
+        inset 0 1px 0 rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   MAIN TITLE
+========================================= */
+h1 {
+
+    color: #4e2e1e;
+
+    font-weight: 700;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+h2,
+h3 {
+
+    color: #5e3b27;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+.custom-card {
+
+    background:
+        rgba(255,255,255,0.85);
+
+    border-radius: 24px;
+
+    padding: 25px;
+
+    border:
+        1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+
+        0 10px 30px rgba(0,0,0,0.08);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.3s;
+}
+
+
+.custom-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+
+        0 18px 40px rgba(0,0,0,0.12);
+}
+
+
+/* =========================================
+   CHART CONTAINER
+========================================= */
+.chart-container {
+
+    background:
+        rgba(255,255,255,0.82);
+
+    border-radius: 24px;
+
+    padding: 24px;
+
+    border:
+        1px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+
+        0 10px 30px rgba(0,0,0,0.08);
+
+    backdrop-filter: blur(12px);
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+.stButton > button {
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b5a2b,
+            #5c3317
+        );
+
+    color: white;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 12px 24px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.2);
+}
+
+
+.stButton > button:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================
+   DATAFRAME
+========================================= */
+div[data-testid="stDataFrame"] {
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(0,0,0,0.08);
+}
+
+
+/* =========================================
+   ALERT
+========================================= */
+.stAlert {
+
+    border-radius: 18px;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            180deg,
+            #8b5a2b,
+            #5c3317
+        );
+
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+
+    background: #f1f1f1;
+}
+
+/* =========================================
+   MENU NAVIGATION STYLE
+========================================= */
+.nav-link {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ACTIVE MENU GLOW
+========================================= */
+.nav-link-selected {
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   OPTION MENU CLEAN
+========================================= */
+.stOptionMenu {
+
+    background: transparent !important;
+}
+
+/* =========================================
+   FIX OPTION MENU BACKGROUND
+========================================= */
+
+/* wrapper utama option menu */
+div[data-testid="stSidebar"] ul {
+
+    background: transparent !important;
+}
+
+
+/* container menu */
+div[data-testid="stSidebar"] .css-1oe5cao {
+
+    background: transparent !important;
+}
+
+
+/* wrapper horizontal */
+div[data-testid="stSidebar"] .css-1d391kg {
+
+    background: transparent !important;
+}
+
+
+/* =========================================
+   FIX OPTION MENU BACKGROUND ONLY
+========================================= */
+
+div[data-testid="stSidebar"] nav {
+
+    background: transparent !important;
+}
+
+div[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
+
+    background: transparent !important;
+}
+
+
+/* TAPI MENU ACTIVE TETAP MUNCUL */
+.nav-link-selected {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(140,80,35,0.85),
+            rgba(90,45,20,0.55)
+        ) !important;
+}
+
+/* =========================================
+   SELECTBOX PREMIUM FINAL
+========================================= */
+div[data-baseweb="select"] {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(140,80,35,0.88),
+            rgba(90,45,20,0.65)
+        ) !important;
+
+    border:
+        1px solid rgba(106, 20, 20, 0.08) !important;
+
+    border-radius: 9px !important;
+
+    min-height: 30px !important;
+
+    box-shadow:
+
+        0 8px 20px rgba(0,0,0,0.22),
+
+        inset 0 1px 0 rgba(255,255,255,0.04);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   INNER SELECTBOX
+========================================= */
+div[data-baseweb="select"] > div {
+
+    background: transparent !important;
+
+    padding-left: 18px !important;
+}
+
+
+/* =========================================
+   SEMUA INNER DIV TRANSPARAN
+========================================= */
+div[data-baseweb="select"] div {
+
+    background: transparent !important;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+div[data-baseweb="select"] span {
+
+    color: rgb(252, 6, 6) !important;
+
+    font-size: 18px !important;
+
+    font-weight: 500 !important;
+}
+
+
+/* =========================================
+   DROPDOWN ICON
+========================================= */
+div[data-baseweb="select"] svg {
+
+    color: white !important;
+
+    width: 22px !important;
+
+    height: 22px !important;
+}
+
+/* =========================================
+   METRIC CARD FINAL
+========================================= */
+
+div[data-testid="metric-container"] {
+
+    background: #ffffff !important;
+
+    border-radius: 22px !important;
+
+    padding: 22px !important;
+
+    border:
+        1px solid rgba(0,0,0,0.05) !important;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.08) !important;
+
+    min-height: 150px !important;
+}
+
+
+/* JUDUL */
+div[data-testid="metric-container"] label {
+
+    color: #6b4b36 !important;
+
+    opacity: 1 !important;
+
+    font-size: 17px !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* ANGKA */
+div[data-testid="metric-container"]
+[data-testid="stMetricValue"] {
+
+    color: #4e2e1e !important;
+
+    font-size: 32px !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* SUBTEXT */
+div[data-testid="metric-container"]
+[data-testid="stMetricDelta"] {
+
+    color: #7a8f62 !important;
+
+    font-size: 15px !important;
+
+    font-weight: 500 !important;
+}
+
+
+/* HILANGKAN PANAH */
+div[data-testid="stMetricDelta"] svg {
+
+    display: none !important;
+}
+
+/* =========================================
+   PREMIUM DATAFRAME
+========================================= */
+
+/* card luar dataframe */
+div[data-testid="stDataFrame"] {
+
+    background: rgba(255,255,255,0.85) !important;
+
+    border-radius: 22px !important;
+
+    overflow: hidden !important;
+
+    border:
+        1px solid rgba(0,0,0,0.06) !important;
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,0.08) !important;
+
+    padding: 6px !important;
+}
+
+
+/* header tabel */
+div[data-testid="stDataFrame"] thead tr th {
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b5a2b,
+            #5c3317
+        ) !important;
+
+    color: white !important;
+
+    font-size: 14px !important;
+
+    font-weight: 600 !important;
+
+    border: none !important;
+}
+
+
+/* isi tabel */
+div[data-testid="stDataFrame"] tbody tr td {
+
+    color: #4e2e1e !important;
+
+    font-size: 14px !important;
+
+    border-bottom:
+        1px solid rgba(0,0,0,0.05) !important;
+}
+
+
+/* hover row */
+div[data-testid="stDataFrame"] tbody tr:hover {
+
+    background:
+        rgba(139,90,43,0.06) !important;
+}
+
+/* =========================================
+   PREMIUM TABLE FINAL
+========================================= */
+
+.premium-table-wrapper {
+
+    background: rgba(255,255,255,0.88);
+
+    border-radius: 24px;
+
+    padding: 14px;
+
+    border:
+        1px solid rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+
+    overflow-x: auto;
+}
+
+
+/* TABLE */
+.premium-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+/* HEADER */
+.premium-table thead th {
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b5a2b,
+            #5c3317
+        );
+
+    color: white;
+
+    padding: 16px;
+
+    text-align: left;
+
+    font-weight: 600;
+
+    border: none;
+}
+
+
+/* BODY */
+.premium-table tbody td {
+
+    padding: 14px 16px;
+
+    color: #4e2e1e;
+
+    border-bottom:
+        1px solid rgba(0,0,0,0.06);
+}
+
+
+/* HOVER */
+.premium-table tbody tr:hover {
+
+    background:
+        rgba(139,90,43,0.05);
+}
+
+
+/* LAST ROW */
+.premium-table tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+/* =========================================
+   PREMIUM HTML TABLE FINAL
+========================================= */
+
+.premium-table-wrapper {
+
+    background: rgba(255,255,255,0.92);
+
+    border-radius: 26px;
+
+    padding: 16px;
+
+    border:
+        1px solid rgba(0,0,0,0.05);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.08);
+
+    overflow-x: auto;
+
+    overflow-y: auto;
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.premium-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADER TABLE
+========================================= */
+
+.premium-table thead th {
+
+    background:
+        linear-gradient(
+            135deg,
+            #8b5a2b,
+            #5c3317
+        );
+
+    color: white;
+
+    padding: 16px;
+
+    text-align: left;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    border: none;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+}
+
+
+/* =========================================
+   BODY TABLE
+========================================= */
+
+.premium-table tbody td {
+
+    padding: 14px 16px;
+
+    color: #4e2e1e;
+
+    border-bottom:
+        1px solid rgba(0,0,0,0.05);
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+
+/* =========================================
+   ROW STRIPES
+========================================= */
+
+.premium-table tbody tr:nth-child(odd) {
+
+    background: #fffaf5;
+}
+
+.premium-table tbody tr:nth-child(even) {
+
+    background: #f9f4ee;
+}
+
+
+/* =========================================
+   ROW HOVER
+========================================= */
+
+.premium-table tbody tr:hover {
+
+    background:
+        rgba(139,90,43,0.08);
+
+    transform: scale(1.002);
+}
+
+
+/* =========================================
+   LAST ROW
+========================================= */
+
+.premium-table tbody tr:last-child td {
+
+    border-bottom: none;
+}
+
+
+/* =========================================
+   SCROLLBAR TABLE
+========================================= */
+
+.premium-table-wrapper::-webkit-scrollbar {
+
+    width: 7px;
+
+    height: 7px;
+}
+
+
+.premium-table-wrapper::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            180deg,
+            #8b5a2b,
+            #5c3317
+        );
+
+    border-radius: 10px;
+}
+
+
+.premium-table-wrapper::-webkit-scrollbar-track {
+
+    background: #f2ebe4;
+}
+
+
+/* =========================================
+   TABLE TITLE SECTION
+========================================= */
+
+.table-section-title {
+
+    color: #4e2e1e;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin-bottom: 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE TABLE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .premium-table {
+
+        font-size: 12px;
+    }
+
+    .premium-table thead th {
+
+        padding: 12px;
+    }
+
+    .premium-table tbody td {
+
+        padding: 10px;
+    }
+
+    .table-section-title {
+
+        font-size: 22px;
+    }
+}
+
+/* =========================================
+   CUSTOM METRIC CARD
+   Dipakai oleh render_metric_card() di app.py
+========================================= */
+.metric-card-custom {
+    background: rgba(255,255,255,0.96);
+    border-radius: 20px;
+    padding: 24px 28px;
+    min-height: 118px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    border: 1px solid rgba(92,51,23,0.06);
+    box-shadow:
+        0 12px 28px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+    transition: 0.25s ease;
+}
+
+.metric-card-custom:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 18px 36px rgba(0,0,0,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.metric-icon-custom {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 30% 25%, #9a6535 0%, #6f3f1d 45%, #4a2612 100%);
+    color: #fffaf2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+    box-shadow:
+        0 10px 22px rgba(76,38,18,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.24);
+}
+
+.metric-content-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metric-title-custom {
+    color: #5a3522;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+
+.metric-value-custom {
+    color: #3b1f12;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: 0.3px;
+}
+
+.metric-subtitle-custom {
+    width: fit-content;
+    color: #8a542c;
+    background: #f7eadb;
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   PRODUCT & COMPACT TABLE FIX
+========================================= */
+.premium-table-wrapper {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+}
+
+.premium-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.product-table-wrapper {
+    max-height: 530px;
+}
+
+.product-table {
+    min-width: 620px;
+}
+
+.compact-table-wrapper {
+    max-height: 215px;
+    padding: 12px !important;
+}
+
+.compact-table {
+    table-layout: fixed;
+    width: 100%;
+    min-width: 0;
+}
+
+.compact-table thead th {
+    padding: 9px 6px !important;
+    font-size: 10.5px !important;
+    white-space: normal !important;
+    word-break: break-word;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.compact-table tbody td {
+    padding: 8px 6px !important;
+    font-size: 10.5px !important;
+    white-space: normal !important;
+    word-break: break-word;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.compact-table th:first-child,
+.compact-table td:first-child {
+    width: 78px;
+}
+
+@media screen and (max-width: 768px) {
+    .metric-card-custom {
+        padding: 18px;
+        gap: 16px;
+    }
+
+    .metric-icon-custom {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+        font-size: 25px;
+    }
+
+    .metric-value-custom {
+        font-size: 26px;
+    }
+
+    .metric-title-custom {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================
+   FINAL OVERRIDE - CUSTOM METRIC CARD
+   Letakkan paling bawah agar menimpa style lama Streamlit
+========================================= */
+
+.metric-card-custom {
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    padding: 24px 28px !important;
+    min-height: 118px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 22px !important;
+    border: 1px solid rgba(92,51,23,0.07) !important;
+    box-shadow:
+        0 12px 28px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.80) !important;
+    backdrop-filter: blur(10px) !important;
+    transition: 0.25s ease !important;
+    margin-bottom: 8px !important;
+}
+
+.metric-card-custom:hover {
+    transform: translateY(-3px) !important;
+    box-shadow:
+        0 18px 36px rgba(0,0,0,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.85) !important;
+}
+
+.metric-icon-custom {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    border-radius: 50% !important;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #9a6535 0%,
+            #6f3f1d 45%,
+            #4a2612 100%
+        ) !important;
+    color: #fffaf2 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 31px !important;
+    line-height: 1 !important;
+    box-shadow:
+        0 10px 22px rgba(76,38,18,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.24) !important;
+}
+
+.metric-content-custom {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.metric-title-custom {
+    color: #5a3522 !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+    margin-bottom: 5px !important;
+}
+
+.metric-value-custom {
+    color: #3b1f12 !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0.3px !important;
+}
+
+.metric-subtitle-custom {
+    width: fit-content !important;
+    color: #8a542c !important;
+    background: #f7eadb !important;
+    border-radius: 10px !important;
+    padding: 4px 10px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-top: 8px !important;
+}
+
+div[data-testid="metric-container"] label,
+div[data-testid="metric-container"] [data-testid="stMetricValue"],
+div[data-testid="metric-container"] [data-testid="stMetricDelta"] {
+    color: #4e2e1e !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================
+   EVALUASI MODEL PAGE
+========================================= */
+
+.eval-page-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.eval-page-icon {
+    color: #5c3317;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.eval-page-title h1 {
+    color: #4e2e1e;
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.eval-page-title p {
+    color: #7b5a45;
+    font-size: 16px;
+    margin: 8px 0 0 0;
+}
+
+.eval-select-label {
+    background:
+        linear-gradient(
+            135deg,
+            #8b5a2b,
+            #5c3317
+        );
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0 8px 0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.eval-metric-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px;
+    height: 165px;
+    min-height: 165px;
+    max-height: 165px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid rgba(92,51,23,0.06);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+    box-sizing: border-box;
+}
+
+.eval-metric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 34px rgba(0,0,0,0.12);
+}
+
+.eval-metric-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #9a6535 0%,
+            #6f3f1d 45%,
+            #4a2612 100%
+        );
+    color: #fffaf2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 800;
+    box-shadow:
+        0 9px 20px rgba(76,38,18,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.24);
+}
+
+.eval-metric-body {
+    min-width: 0;
+    flex: 1;
+}
+
+.eval-metric-title {
+    color: #5a3522;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    min-height: 22px;
+}
+
+.eval-metric-value {
+    color: #3b1f12;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.1;
+    word-break: break-word;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.eval-metric-subtitle {
+    width: fit-content;
+    color: #47723b;
+    background: #e4f3d7;
+    border-radius: 9px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 12px;
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+.eval-section-title {
+    color: #4e2e1e !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    margin: 22px 0 14px 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.eval-panel {
+    background: rgba(255,255,255,0.92);
+    border-radius: 22px;
+    padding: 20px;
+    border: 1px solid rgba(92,51,23,0.06);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    margin: 0 0 20px 0;
+}
+
+.chart-eval-panel {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 22px 22px 12px 22px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    min-height: 485px !important;
+    overflow: hidden !important;
+}
+
+.chart-eval-panel [data-testid="stPlotlyChart"] {
+    background: #fffaf4 !important;
+    border-radius: 18px !important;
+    border: 1px solid rgba(92,51,23,0.05) !important;
+    overflow: hidden !important;
+}
+
+.eval-table-area {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.eval-table-area .premium-table-wrapper {
+    margin-top: 0 !important;
+    border-radius: 22px !important;
+    background: #ffffff !important;
+    padding: 14px !important;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08) !important;
+}
+
+.eval-note {
+    display: none !important;
+}
+
+.eval-soft-note {
+    color: #6b4b36;
+    background: #fbf2e8;
+    border-radius: 12px;
+    padding: 13px 15px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.eval-info-card {
+    background: rgba(255,255,255,0.93);
+    border-radius: 22px;
+    padding: 22px;
+    border: 1px solid rgba(92,51,23,0.06);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.eval-info-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4e2e1e;
+    margin-bottom: 16px;
+}
+
+.eval-info-title span {
+    font-size: 25px;
+}
+
+.eval-info-title h4 {
+    margin: 0;
+    color: #4e2e1e;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.eval-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.eval-info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    align-items: center;
+    background: #fff8f1;
+    border: 1px solid rgba(92,51,23,0.06);
+    border-radius: 13px;
+    padding: 13px 14px;
+}
+
+.eval-info-row span {
+    color: #7b5a45;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.eval-info-row b {
+    color: #3b1f12;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: right;
+}
+
+.eval-footer-note {
+    color: #6b4b36;
+    background: #fbf2e8;
+    border-radius: 16px;
+    padding: 17px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(92,51,23,0.05);
+}
+
+@media screen and (max-width: 1100px) {
+    .eval-metric-card {
+        height: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        padding: 18px;
+    }
+
+    .eval-metric-value {
+        font-size: 23px;
+    }
+
+    .eval-metric-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================
+   FIX CHART CARD - PLOTLY DIRECT CARD
+   st.plotly_chart tidak bisa dibungkus div HTML,
+   jadi card putih diterapkan langsung ke elemen Plotly.
+========================================= */
+
+.chart-eval-panel {
+    display: none !important;
+}
+
+/* Plotly chart langsung menjadi kotak putih */
+[data-testid="stPlotlyChart"] {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 22px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+}
+
+/* Bagian dalam grafik tetap clean */
+[data-testid="stPlotlyChart"] .js-plotly-plot,
+[data-testid="stPlotlyChart"] .plotly {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+/* Supaya judul dan chart tidak terlalu jauh */
+.eval-section-title + div[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================
+   TOP INFO CARDS - EVALUASI MODEL
+========================================= */
+
+.eval-page-title {
+    margin-bottom: 26px !important;
+}
+
+.eval-metric-card {
+    margin-bottom: 8px !important;
+}
+
+/* Baris pertama info cards dibuat sedikit lebih compact */
+div[data-testid="column"] .eval-metric-card {
+    width: 100% !important;
+}
+
+.eval-summary-note {
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+}
+
+/* Rentang tanggal agak panjang, biar tetap rapi */
+.eval-metric-value {
+    font-size: clamp(20px, 1.55vw, 28px) !important;
+}
+
+/* Kartu di atas tetap sama tinggi */
+.eval-metric-card {
+    height: 165px !important;
+    min-height: 165px !important;
+}
+
+
+/* =========================================
+   FINAL FIX - EVAL LAYOUT REARRANGE
+========================================= */
+
+/* Grafik Actual vs Prediction menjadi full width */
+.chart-eval-panel {
+    width: 100% !important;
+    min-height: 520px !important;
+}
+
+/* Kartu Plotly tetap putih */
+[data-testid="stPlotlyChart"] {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 22px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+}
+
+/* Feature Importance: hilangkan box kosong, chart langsung di bawah title */
+.eval-section-title + div[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+}
+
+/* Tabel performa sejajar di kanan Feature Importance */
+.eval-table-area .premium-table-wrapper {
+    margin-top: 0 !important;
+}
+
+/* Jangan tampilkan note besar terlalu tinggi */
+.eval-summary-note {
+    display: none !important;
+}
+
+/* Note feature importance lebih kecil */
+.eval-soft-note {
+    margin-top: 12px !important;
+}
+
+
+/* =========================================
+   FINAL FIX - TOP 4 CARDS + METRICS UNDER CHART
+========================================= */
+
+.eval-metric-card {
+    height: 165px !important;
+    min-height: 165px !important;
+    max-height: 165px !important;
+}
+
+.eval-metric-value {
+    font-size: clamp(19px, 1.45vw, 28px) !important;
+}
+
+/* Baris metric MAE/RMSE/MAPE di bawah grafik */
+.eval-metric-card + .eval-metric-card {
+    margin-top: 0 !important;
+}
+
+/* Supaya rentang tanggal panjang tetap rapi */
+.eval-metric-body {
+    min-width: 0 !important;
+}
+
+.eval-metric-subtitle {
+    line-height: 1.35 !important;
+}
+
+
+/* =========================================
+   FINAL FIX - METRICS UNDER CHART + BROWN FEATURE
+========================================= */
+
+.eval-metric-card {
+    height: 165px !important;
+    min-height: 165px !important;
+    max-height: 165px !important;
+}
+
+.eval-metric-value {
+    font-size: clamp(19px, 1.45vw, 28px) !important;
+}
+
+.eval-section-title + div[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+}
+
+/* Plotly card untuk actual/prediction dan feature importance */
+[data-testid="stPlotlyChart"] {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 22px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+}
+
+[data-testid="stPlotlyChart"] .js-plotly-plot,
+[data-testid="stPlotlyChart"] .plotly {
+    border-radius: 18px !important;
+    overflow: hidden !important;
+}
+
+
+/* =========================================
+   FINAL FIX - CHART AXIS LABELS
+========================================= */
+
+[data-testid="stPlotlyChart"] {
+    padding: 26px 26px 34px 26px !important;
+}
+
+.chart-eval-panel {
+    padding-bottom: 34px !important;
+}
+
+/* Warna label sumbu Plotly */
+[data-testid="stPlotlyChart"] .xtitle,
+[data-testid="stPlotlyChart"] .ytitle,
+[data-testid="stPlotlyChart"] .xtick text,
+[data-testid="stPlotlyChart"] .ytick text {
+    fill: #5c3317 !important;
+}
+
+
+/* =========================================
+   FINAL FIX - PREVENT PLOTLY LABEL CLIPPING
+========================================= */
+
+/* Beri ruang bawah lebih besar untuk label "Minggu" dan "Importance" */
+[data-testid="stPlotlyChart"] {
+    padding: 28px 28px 58px 28px !important;
+}
+
+/* Pastikan area SVG tidak ketutup overflow card */
+[data-testid="stPlotlyChart"],
+[data-testid="stPlotlyChart"] > div,
+[data-testid="stPlotlyChart"] .js-plotly-plot,
+[data-testid="stPlotlyChart"] .plotly,
+[data-testid="stPlotlyChart"] .main-svg {
+    overflow: visible !important;
+}
+
+/* Sembunyikan judul undefined bawaan Plotly kalau masih terbawa */
+[data-testid="stPlotlyChart"] .gtitle {
+    display: none !important;
+}
+
+
+/* =========================================
+   FINAL OVERRIDE - CHART FIT INSIDE WHITE CARD
+   Dipasang paling bawah agar menimpa CSS lama yang duplikat.
+========================================= */
+
+/* Card putih grafik: padding tidak terlalu besar supaya chart pas di dalam box */
+[data-testid="stPlotlyChart"] {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 16px 18px 18px 18px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+}
+
+/* Area grafik di dalam card tetap rapi */
+[data-testid="stPlotlyChart"] > div,
+[data-testid="stPlotlyChart"] .js-plotly-plot,
+[data-testid="stPlotlyChart"] .plotly,
+[data-testid="stPlotlyChart"] .main-svg {
+    overflow: hidden !important;
+    border-radius: 18px !important;
+}
+
+/* Warna label axis dan legend agar tidak abu-abu pucat */
+[data-testid="stPlotlyChart"] .xtitle,
+[data-testid="stPlotlyChart"] .ytitle,
+[data-testid="stPlotlyChart"] .xtick text,
+[data-testid="stPlotlyChart"] .ytick text,
+[data-testid="stPlotlyChart"] .legendtext {
+    fill: #5c3317 !important;
+    color: #5c3317 !important;
+}
+
+/* Sembunyikan judul undefined bawaan Plotly kalau masih terbawa */
+[data-testid="stPlotlyChart"] .gtitle {
+    display: none !important;
+}
+
+/* Feature importance tidak terlalu renggang di kiri */
+.eval-section-title + div[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================
+   FINAL ADDITION - EVALUATION EXPLANATION BOXES
+========================================= */
+
+.eval-explanation-card {
+    background: #fff8f1 !important;
+    border-radius: 18px !important;
+    padding: 18px 20px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.05) !important;
+    margin: 12px 0 24px 0 !important;
+    color: #4e2e1e !important;
+}
+
+.eval-explanation-title {
+    color: #4e2e1e !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    margin-bottom: 14px !important;
+}
+
+.eval-explanation-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+}
+
+.eval-explanation-item {
+    background: rgba(255,255,255,0.72) !important;
+    border-radius: 14px !important;
+    padding: 14px 15px !important;
+    border: 1px solid rgba(92,51,23,0.05) !important;
+}
+
+.eval-explanation-item b {
+    display: block !important;
+    color: #5c3317 !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    margin-bottom: 6px !important;
+}
+
+.eval-explanation-item span {
+    color: #6b4b36 !important;
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+    font-weight: 500 !important;
+}
+
+.performance-note-card {
+    margin-top: 14px !important;
+}
+
+.eval-performance-text {
+    color: #6b4b36 !important;
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+    font-weight: 500 !important;
+}
+
+.eval-performance-text b {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+@media screen and (max-width: 900px) {
+    .eval-explanation-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* =========================================
+   FORECASTING PAGE UI
+========================================= */
+
+.forecast-page-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.forecast-page-icon {
+    color: #5c3317;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.forecast-page-title h1 {
+    color: #4e2e1e;
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.forecast-page-title p {
+    color: #7b5a45;
+    font-size: 16px;
+    margin: 8px 0 0 0;
+}
+
+.forecast-model-badge {
+    background:
+        linear-gradient(
+            135deg,
+            #8b5a2b,
+            #5c3317
+        );
+    color: #ffffff;
+    border-radius: 14px;
+    padding: 15px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.forecast-section-title {
+    color: #4e2e1e !important;
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    margin: 24px 0 14px 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.forecast-soft-note {
+    background: #fff8f1 !important;
+    color: #6b4b36 !important;
+    border-radius: 15px !important;
+    padding: 15px 18px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04) !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    font-weight: 500 !important;
+    margin-top: 14px !important;
+}
+
+.forecast-soft-note b {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+.forecast-insight-card {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 18px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.forecast-insight-row {
+    display: flex !important;
+    gap: 14px !important;
+    align-items: flex-start !important;
+    padding: 16px 14px !important;
+    border-bottom: 1px solid rgba(92,51,23,0.07) !important;
+    color: #6b4b36 !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    font-weight: 500 !important;
+}
+
+.forecast-insight-row:last-child {
+    border-bottom: none !important;
+}
+
+.forecast-insight-row b {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+.forecast-insight-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    border-radius: 50% !important;
+    background: #e4f3d7 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+}
+
+.forecast-footer-note {
+    background: #fff8f1 !important;
+    color: #6b4b36 !important;
+    border-radius: 18px !important;
+    padding: 18px 22px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.05) !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    font-weight: 500 !important;
+    margin-top: 30px !important;
+}
+
+.forecast-footer-note b {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+/* Forecast chart tetap penuh dan rapi dalam card putih */
+.forecast-section-title + div[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================
+   FINAL FIX - FORECASTING INSIGHT & TABLE
+========================================= */
+
+.forecast-insight-card {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 18px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.forecast-insight-row {
+    display: flex !important;
+    gap: 14px !important;
+    align-items: flex-start !important;
+    padding: 16px 14px !important;
+    border-bottom: 1px solid rgba(92,51,23,0.07) !important;
+    color: #6b4b36 !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    font-weight: 500 !important;
+}
+
+.forecast-insight-row:last-child {
+    border-bottom: none !important;
+}
+
+.forecast-insight-row b {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+.forecast-insight-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    border-radius: 50% !important;
+    background: #e4f3d7 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+}
+
+.forecast-section-title + div[data-testid="stPlotlyChart"] {
+    margin-top: 0 !important;
+}
+
+
+/* =========================================
+   SIDEBAR UPLOAD DATASET - COMPACT STYLE
+   Tampilan upload file dibuat lebih ringkas
+========================================= */
+
+section[data-testid="stSidebar"] [data-testid="stFileUploader"] {
+    background: rgba(255,255,255,0.04) !important;
+    border: 1px dashed rgba(255,230,200,0.42) !important;
+    border-radius: 14px !important;
+    padding: 14px 18px !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploader"]:hover {
+    border: 1px dashed rgba(255,230,200,0.65) !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.20) !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] {
+    min-height: 68px !important;
+    padding: 8px 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] svg {
+    width: 34px !important;
+    height: 34px !important;
+    color: #f5d7b2 !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] div {
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] small {
+    color: #d9c0a3 !important;
+    font-size: 13px !important;
+}
+
+/* Sembunyikan tombol browse agar mirip referensi */
+section[data-testid="stSidebar"] [data-testid="stFileUploader"] button {
+    display: none !important;
+}
+
+/* Kecilkan tampilan file yang sudah terupload */
+section[data-testid="stSidebar"] [data-testid="stFileUploaderFile"] {
+    background: transparent !important;
+    border: none !important;
+    padding: 8px 0 0 0 !important;
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderFile"] svg {
+    color: #ffffff !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderFile"] span,
+section[data-testid="stSidebar"] [data-testid="stFileUploaderFile"] div {
+    color: #ffffff !important;
+    font-size: 13px !important;
+}
+
+/* Rapikan label Upload File Excel */
+section[data-testid="stSidebar"] [data-testid="stFileUploader"] label {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+/* =========================================
+   RAPATKAN PILIH JENIS KOPI
+========================================= */
+
+section[data-testid="stSidebar"] .stSelectbox label {
+    margin-bottom: -8px !important;
+    padding-bottom: 0 !important;
+}
+
+section[data-testid="stSidebar"] .stSelectbox {
+    margin-top: -10px !important;
+}
+
+
+/* =========================================
+   EMPTY / LOADING / DATASET ERROR STATES
+========================================= */
+
+.empty-upload-state,
+.center-loading-state,
+.dataset-error-state {
+    width: min(820px, 92%);
+    margin: 90px auto 0 auto;
+    background: rgba(255,255,255,0.88);
+    border-radius: 28px;
+    padding: 44px 38px;
+    text-align: center;
+    border: 1px solid rgba(92,51,23,0.08);
+    box-shadow:
+        0 14px 38px rgba(0,0,0,0.08),
+        inset 0 1px 0 rgba(255,255,255,0.75);
+}
+
+.empty-upload-icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 18px auto;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #9a6535 0%,
+            #6f3f1d 45%,
+            #4a2612 100%
+        );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: #fffaf2;
+    box-shadow:
+        0 12px 26px rgba(76,38,18,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.24);
+}
+
+.empty-upload-title,
+.center-loading-title,
+.dataset-error-title {
+    color: #4e2e1e;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.empty-upload-subtitle,
+.center-loading-subtitle,
+.dataset-error-subtitle {
+    color: #7b5a45;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.coffee-loader {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 18px auto;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #9a6535 0%,
+            #6f3f1d 45%,
+            #4a2612 100%
+        );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: #fffaf2;
+    box-shadow:
+        0 12px 26px rgba(76,38,18,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.24);
+    animation: coffeeSpin 1.4s linear infinite;
+}
+
+@keyframes coffeeSpin {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.06);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.dataset-error-state {
+    background: #fff4f1;
+    border: 1px solid rgba(190,50,35,0.18);
+}
+
+.dataset-error-icon {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto 18px auto;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            #d96b58 0%,
+            #b13b2f 55%,
+            #7b1f17 100%
+        );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    box-shadow:
+        0 12px 26px rgba(150,30,20,0.22),
+        inset 0 1px 0 rgba(255,255,255,0.24);
+}
+
+.dataset-error-title {
+    color: #8a2d22;
+}
+
+.dataset-error-subtitle {
+    color: #8a4b42;
+}
+
+
+/* =========================================
+   EVALUASI MODEL - PARAMETER SECTION
+========================================= */
+
+.eval-param-card-title {
+    color: #4e2e1e;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eval-param-card-title::before {
+    content: "▦";
+    color: #8b5a2b;
+    font-size: 18px;
+}
+
+.eval-param-note {
+    color: #6b4b36;
+    background: #fbf2e8;
+    border-radius: 12px;
+    padding: 13px 15px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid rgba(92,51,23,0.05);
+}
+
+
+/* =========================================
+   FEATURE IMPORTANCE EXPLANATION NOTE
+========================================= */
+.feature-importance-note {
+    line-height: 1.75 !important;
+    font-size: 14px !important;
+    color: #5c3317 !important;
+    background: #fbf2e8 !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    border-radius: 14px !important;
+    padding: 16px 18px !important;
+}
+
+.feature-importance-note b {
+    color: #3b1f12 !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================
+   FEATURE IMPORTANCE NOTE - FIX HTML DISPLAY
+========================================= */
+.feature-importance-note {
+    line-height: 1.6 !important;
+    font-size: 14px !important;
+    color: #5c3317 !important;
+    background: #fbf2e8 !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    border-radius: 16px !important;
+    padding: 18px 20px !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.04) !important;
+    overflow: visible !important;
+}
+
+.feature-note-title {
+    color: #3b1f12 !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    margin-bottom: 12px !important;
+}
+
+.feature-note-item {
+    display: grid !important;
+    grid-template-columns: 105px 1fr !important;
+    gap: 10px !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid rgba(92,51,23,0.08) !important;
+}
+
+.feature-note-item:last-of-type {
+    border-bottom: none !important;
+}
+
+.feature-note-item b {
+    color: #3b1f12 !important;
+    font-weight: 800 !important;
+}
+
+.feature-note-item span {
+    color: #6b4b36 !important;
+    font-weight: 500 !important;
+}
+
+.feature-note-footer {
+    margin-top: 12px !important;
+    padding: 12px 14px !important;
+    background: #fff8f1 !important;
+    border-radius: 12px !important;
+    color: #4e2e1e !important;
+    font-weight: 600 !important;
+}
+
+@media screen and (max-width: 900px) {
+    .feature-note-item {
+        grid-template-columns: 1fr !important;
+        gap: 4px !important;
+    }
+}
+
+
+/* =========================================
+   FINAL FIX FEATURE IMPORTANCE NOTE RENDER
+========================================= */
+.feature-importance-note {
+    display: block !important;
+    line-height: 1.6 !important;
+    font-size: 14px !important;
+    color: #5c3317 !important;
+    background: #fbf2e8 !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    border-radius: 16px !important;
+    padding: 18px 20px !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.04) !important;
+    overflow: visible !important;
+    white-space: normal !important;
+}
+
+.feature-importance-note .feature-note-title {
+    color: #3b1f12 !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    margin-bottom: 12px !important;
+}
+
+.feature-importance-note .feature-note-item {
+    display: grid !important;
+    grid-template-columns: 105px 1fr !important;
+    gap: 10px !important;
+    padding: 8px 0 !important;
+    border-bottom: 1px solid rgba(92,51,23,0.08) !important;
+}
+
+.feature-importance-note .feature-note-item b {
+    color: #3b1f12 !important;
+    font-weight: 800 !important;
+}
+
+.feature-importance-note .feature-note-item span {
+    color: #6b4b36 !important;
+    font-weight: 500 !important;
+}
+
+.feature-importance-note .feature-note-footer {
+    margin-top: 12px !important;
+    padding: 12px 14px !important;
+    background: #fff8f1 !important;
+    border-radius: 12px !important;
+    color: #4e2e1e !important;
+    font-weight: 600 !important;
+}
+
+.feature-importance-note pre,
+.feature-importance-note code {
+    display: none !important;
+}
+
+
+/* =========================================
+   FEATURE IMPORTANCE EXPANDER FINAL
+========================================= */
+div[data-testid="stExpander"] {
+    background: #fbf2e8 !important;
+    border: 1px solid rgba(92, 51, 23, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.04) !important;
+    overflow: hidden !important;
+    margin-top: 12px !important;
+}
+
+div[data-testid="stExpander"] details {
+    background: transparent !important;
+}
+
+div[data-testid="stExpander"] summary {
+    color: #3b1f12 !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    padding: 12px 16px !important;
+}
+
+div[data-testid="stExpander"] summary:hover {
+    background: rgba(139, 90, 43, 0.06) !important;
+}
+
+div[data-testid="stExpander"] [data-testid="stMarkdownContainer"] {
+    color: #5c3317 !important;
+}
+
+.feature-importance-note {
+    margin-top: 6px !important;
+    background: #fbf2e8 !important;
+    border-radius: 14px !important;
+    padding: 8px 14px 16px 14px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.feature-note-item {
+    display: grid !important;
+    grid-template-columns: 105px 1fr !important;
+    gap: 14px !important;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid rgba(92, 51, 23, 0.08) !important;
+}
+
+.feature-note-item b {
+    color: #3b1f12 !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+}
+
+.feature-note-item span {
+    color: #6b4b36 !important;
+    line-height: 1.7 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.feature-note-footer {
+    margin-top: 14px !important;
+    background: #fff8f1 !important;
+    padding: 13px 15px !important;
+    border-radius: 12px !important;
+    color: #4e2e1e !important;
+    font-weight: 700 !important;
+    line-height: 1.6 !important;
+}
+
+@media screen and (max-width: 900px) {
+    .feature-note-item {
+        grid-template-columns: 1fr !important;
+        gap: 4px !important;
+    }
+}
+
+
+/* =========================================
+   FINAL OVERRIDE - EXPANDER HEADER CREAM
+========================================= */
+div[data-testid="stExpander"] {
+    background: #fbf2e8 !important;
+    border: 1px solid rgba(92, 51, 23, 0.08) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.04) !important;
+    overflow: hidden !important;
+    margin-top: 12px !important;
+}
+
+/* Streamlit expander header */
+div[data-testid="stExpander"] details summary {
+    background: #fbf2e8 !important;
+    color: #4e2e1e !important;
+    border-radius: 16px 16px 0 0 !important;
+    border-bottom: 1px solid rgba(92, 51, 23, 0.08) !important;
+}
+
+/* Header inner text */
+div[data-testid="stExpander"] details summary p,
+div[data-testid="stExpander"] details summary span,
+div[data-testid="stExpander"] details summary div {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+/* Arrow icon */
+div[data-testid="stExpander"] details summary svg {
+    fill: #4e2e1e !important;
+    color: #4e2e1e !important;
+}
+
+/* Hover tetap soft */
+div[data-testid="stExpander"] details summary:hover {
+    background: #f7eadb !important;
+}
+
+/* Isi expander */
+div[data-testid="stExpander"] [data-testid="stExpanderDetails"] {
+    background: #fbf2e8 !important;
+}
+
+/* Hilangkan kemungkinan background hitam dari rule lama */
+div[data-testid="stExpander"] pre,
+div[data-testid="stExpander"] code {
+    background: transparent !important;
+    color: #4e2e1e !important;
+}
+
+
+/* =========================================
+   TIME SERIES COMPONENT SECTION
+========================================= */
+.component-title {
+    margin-top: 26px !important;
+}
+
+.component-soft-note {
+    margin-top: 14px !important;
+    margin-bottom: 18px !important;
+}
+
+
+/* =========================================
+   FORECAST MODEL SELECTOR
+========================================= */
+.forecast-select-label {
+    background: linear-gradient(135deg, #8b5a2b, #5c3317);
+    color: #ffffff !important;
+    border-radius: 14px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0 0 8px 0;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.forecast-model-badge {
+    margin-top: 10px !important;
+}
+
+
+/* =========================================
+   FORECAST HEADER COMPACT CONTROLS
+========================================= */
+.forecast-model-badge-small,
+.forecast-select-label-small {
+    min-height: 48px !important;
+    height: 48px !important;
+    border-radius: 13px !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+    line-height: 1.25 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.forecast-model-badge-small b {
+    font-size: 13px !important;
+}
+
+.forecast-select-label-small {
+    background: linear-gradient(135deg, #8b5a2b, #5c3317) !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+/* selectbox forecast dibuat lebih pendek */
+div[data-testid="stSelectbox"] {
+    margin-top: 0 !important;
+}
+
+div[data-testid="stSelectbox"] > div {
+    min-height: 42px !important;
+}
+
+
+/* =========================================
+   FORECAST RECOMMENDATION BADGE TEXT FIX
+========================================= */
+.forecast-model-badge-small {
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+
+.forecast-badge-title {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #f6f1ea !important;
+    line-height: 1.15 !important;
+    margin-bottom: 2px !important;
+    white-space: nowrap !important;
+}
+
+.forecast-badge-model {
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+}
