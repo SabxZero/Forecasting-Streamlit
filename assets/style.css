@@ -2736,3 +2736,60 @@ div[data-testid="stSelectbox"] > div {
     line-height: 1.15 !important;
     white-space: nowrap !important;
 }
+
+
+/* =========================================
+   FINAL FIX - SIDEBAR NAVIGATION BACKGROUND
+   Supaya box belakang menu tetap gelap di semua theme/browser.
+========================================= */
+
+section[data-testid="stSidebar"] div[class*="option-menu"],
+section[data-testid="stSidebar"] .stOptionMenu,
+section[data-testid="stSidebar"] ul.nav,
+section[data-testid="stSidebar"] .nav,
+section[data-testid="stSidebar"] .nav-pills {
+    background: #252731 !important;
+    background-color: #252731 !important;
+    padding: 16px !important;
+    border-radius: 0px !important;
+    border: 1px solid rgba(255,255,255,0.04) !important;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.22) !important;
+}
+
+/* item menu non-aktif tetap gelap/transparan dan teks tetap putih */
+section[data-testid="stSidebar"] .nav-link,
+section[data-testid="stSidebar"] a.nav-link {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-radius: 18px !important;
+}
+
+/* icon dan teks pada menu tetap terlihat */
+section[data-testid="stSidebar"] .nav-link span,
+section[data-testid="stSidebar"] .nav-link i,
+section[data-testid="stSidebar"] .nav-link svg,
+section[data-testid="stSidebar"] .nav-link p,
+section[data-testid="stSidebar"] .nav-link div {
+    color: #ffffff !important;
+    fill: #f5d7b2 !important;
+}
+
+/* hover tetap gelap lembut, tidak berubah putih */
+section[data-testid="stSidebar"] .nav-link:hover {
+    background: rgba(255,255,255,0.06) !important;
+    color: #ffffff !important;
+}
+
+/* menu aktif tetap gradasi coklat */
+section[data-testid="stSidebar"] .nav-link-selected,
+section[data-testid="stSidebar"] a.nav-link-selected {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(140,80,35,0.88),
+            rgba(90,45,20,0.62)
+        ) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22) !important;
+}
