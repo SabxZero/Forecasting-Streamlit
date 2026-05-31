@@ -2793,3 +2793,2136 @@ section[data-testid="stSidebar"] a.nav-link-selected {
     border: 1px solid rgba(255,255,255,0.06) !important;
     box-shadow: 0 6px 18px rgba(0,0,0,0.22) !important;
 }
+
+
+/* =========================================
+   STOCK OPNAME - FORECASTING PAGE
+========================================= */
+.opname-title {
+    margin-top: 34px !important;
+}
+
+.opname-description-card {
+    background: #fbf2e8 !important;
+    color: #5a3522 !important;
+    border: 1px solid rgba(92,51,23,0.07) !important;
+    border-radius: 18px !important;
+    padding: 16px 18px !important;
+    margin: 8px 0 18px 0 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06) !important;
+}
+
+.opname-description-card b {
+    color: #3b1f12 !important;
+}
+
+.opname-card,
+.opname-result-card {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 22px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    min-height: 315px !important;
+}
+
+.opname-card-title {
+    color: #4e2e1e !important;
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    margin-bottom: 16px !important;
+}
+
+.opname-card label,
+.opname-card div[data-testid="stSelectbox"] label,
+.opname-card div[data-testid="stNumberInput"] label {
+    color: #5a3522 !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
+.opname-conversion-box {
+    margin-top: 16px !important;
+    background: #fff8f1 !important;
+    border: 1px solid rgba(92,51,23,0.07) !important;
+    border-radius: 16px !important;
+    padding: 16px !important;
+    color: #7b5a45 !important;
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+}
+
+.opname-conversion-box b {
+    color: #3b1f12 !important;
+    font-size: 21px !important;
+    font-weight: 800 !important;
+}
+
+.opname-conversion-box span {
+    color: #8a542c !important;
+    font-weight: 700 !important;
+}
+
+.opname-status-box {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    border-radius: 18px !important;
+    padding: 16px !important;
+    margin-bottom: 16px !important;
+    border: 1px solid rgba(92,51,23,0.07) !important;
+}
+
+.opname-status-safe {
+    background: #edf8e6 !important;
+}
+
+.opname-status-danger {
+    background: #fff0ed !important;
+}
+
+.opname-status-warning {
+    background: #fff5df !important;
+}
+
+.opname-status-icon {
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ffffff !important;
+    font-size: 22px !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08) !important;
+}
+
+.opname-status-title {
+    color: #3b1f12 !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    margin-bottom: 5px !important;
+}
+
+.opname-status-message {
+    color: #6b4b36 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    line-height: 1.55 !important;
+}
+
+.opname-result-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    margin-bottom: 16px !important;
+}
+
+.opname-result-item {
+    background: #fff8f1 !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    border-radius: 14px !important;
+    padding: 13px 14px !important;
+}
+
+.opname-result-item span {
+    color: #7b5a45 !important;
+    display: block !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+}
+
+.opname-result-item b {
+    color: #3b1f12 !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+}
+
+.opname-recommendation-box {
+    background: linear-gradient(135deg, #8b5a2b, #5c3317) !important;
+    color: #ffffff !important;
+    border-radius: 18px !important;
+    padding: 18px !important;
+    box-shadow: 0 10px 24px rgba(92,51,23,0.20) !important;
+}
+
+.opname-recommendation-title {
+    color: #f5d7b2 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.opname-recommendation-value {
+    color: #ffffff !important;
+    font-size: 26px !important;
+    font-weight: 900 !important;
+    line-height: 1.15 !important;
+}
+
+.opname-recommendation-subtitle {
+    color: #fff1df !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    margin-top: 8px !important;
+    line-height: 1.55 !important;
+}
+
+.opname-recommendation-subtitle b {
+    color: #ffffff !important;
+}
+
+@media screen and (max-width: 900px) {
+    .opname-result-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/* =========================================
+   FIX STOCK OPNAME HTML RENDER & INPUT CARD
+========================================= */
+.standalone-opname-title {
+    background: #ffffff !important;
+    border-radius: 24px 24px 0 0 !important;
+    padding: 22px 22px 4px 22px !important;
+    margin-bottom: 0 !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    border-bottom: none !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+.standalone-opname-title + div[data-testid="stSelectbox"],
+.standalone-opname-title + div + div[data-testid="stNumberInput"] {
+    background: #ffffff !important;
+}
+
+.opname-result-card {
+    color: #4e2e1e !important;
+}
+
+.opname-result-card div,
+.opname-result-card span,
+.opname-result-card b {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* =========================================
+   HISTORY FORECASTING EMBEDDED IN FORECASTING PAGE
+========================================= */
+.history-embedded-title {
+    margin-top: 28px !important;
+}
+.history-embedded-subtitle {
+    color: #7b5a45 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-top: -8px !important;
+    margin-bottom: 18px !important;
+}
+
+/* =========================================
+   RIWAYAT FORECASTING CLEAN LAYOUT
+========================================= */
+.history-chart-title-row {
+    margin: 8px 0 10px 0;
+}
+
+.history-chart-title {
+    color: #4e2e1e !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.history-chart-subtitle {
+    color: #7b5a45 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-top: 6px !important;
+}
+
+.history-table-title {
+    margin-top: 28px !important;
+}
+
+.history-filter-label {
+    color: #5a3522 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    margin: 8px 0 6px 0 !important;
+}
+
+.history-embedded-title {
+    margin-top: 28px !important;
+}
+
+.history-embedded-subtitle {
+    color: #7b5a45 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-bottom: 14px !important;
+}
+
+
+/* =========================================
+   HISTORY FORECASTING HEADER - SAME SCALE AS FORECASTING PAGE
+========================================= */
+.history-forecast-main-header {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+    margin: 34px 0 20px 0 !important;
+}
+
+.history-forecast-icon {
+    color: #5c3317 !important;
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    padding-top: 4px !important;
+}
+
+.history-forecast-main-header h1 {
+    color: #4e2e1e !important;
+    font-size: 42px !important;
+    font-weight: 800 !important;
+    margin: 0 !important;
+    line-height: 1.1 !important;
+}
+
+.history-forecast-main-header p {
+    color: #7b5a45 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin: 8px 0 0 0 !important;
+}
+
+.history-forecast-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+.history-forecast-badges {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin-top: 12px !important;
+}
+
+.history-forecast-badges span {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    color: #7b5a45 !important;
+    background: #fbf2e8 !important;
+    border: 1px solid rgba(92,51,23,0.10) !important;
+    border-radius: 14px !important;
+    padding: 8px 14px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    box-shadow: 0 8px 18px rgba(92,51,23,0.05) !important;
+}
+
+.history-forecast-badges span b {
+    color: #4e2e1e !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================
+   FINAL SELECTBOX OVERRIDE - GRADASI + POINTER
+   Dipakai untuk pilihan biji kopi, model, periode, dan tahun.
+========================================= */
+div[data-testid="stSelectbox"] label,
+div[data-testid="stSelectbox"] label p {
+    color: #4e2e1e !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stSelectbox"] label,
+section[data-testid="stSidebar"] div[data-testid="stSelectbox"] label p {
+    color: #ffffff !important;
+}
+
+div[data-baseweb="select"] {
+    background: linear-gradient(
+        90deg,
+        rgba(140,80,35,0.95),
+        rgba(90,45,20,0.72)
+    ) !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
+    border-radius: 18px !important;
+    min-height: 46px !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.22) !important;
+    cursor: pointer !important;
+}
+
+div[data-baseweb="select"] *,
+div[data-baseweb="select"] > div,
+div[data-baseweb="select"] div,
+div[data-baseweb="select"] span,
+div[data-baseweb="select"] svg {
+    cursor: pointer !important;
+}
+
+div[data-baseweb="select"] span {
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+div[data-baseweb="select"] svg {
+    color: #ffffff !important;
+}
+
+div[data-baseweb="select"]:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 9px 24px rgba(0,0,0,0.28) !important;
+    background: linear-gradient(
+        90deg,
+        rgba(155,90,42,0.98),
+        rgba(96,48,22,0.78)
+    ) !important;
+}
+
+/* Dropdown menu item pointer */
+ul[role="listbox"] li,
+div[role="option"] {
+    cursor: pointer !important;
+}
+
+/* =========================================
+   FINAL FIX - SIDEBAR UPLOAD ICON + HOVER
+   Membuat area drag & drop lebih jelas bisa diklik
+========================================= */
+section[data-testid="stSidebar"] [data-testid="stFileUploader"] {
+    position: relative !important;
+    cursor: pointer !important;
+    transition: all 0.28s ease !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploader"] * {
+    cursor: pointer !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] {
+    position: relative !important;
+    min-height: 108px !important;
+    padding: 14px 12px 14px 72px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    border-radius: 14px !important;
+    transition: all 0.28s ease !important;
+}
+
+/* ikon upload di sebelah kiri tulisan drag & drop */
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"]::before {
+    content: "⬇" !important;
+    position: absolute !important;
+    left: 18px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #fff7e8 !important;
+    font-size: 25px !important;
+    font-weight: 800 !important;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(140,80,35,0.92),
+            rgba(90,45,20,0.74)
+        ) !important;
+    border: 1px solid rgba(255,230,200,0.24) !important;
+    box-shadow:
+        0 8px 18px rgba(0,0,0,0.28),
+        inset 0 1px 0 rgba(255,255,255,0.14) !important;
+}
+
+/* ikon tunggal: panah ke bawah */
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"]::after {
+    display: none !important;
+    content: "" !important;
+}
+
+/* sembunyikan icon bawaan agar tidak dobel */
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] svg {
+    display: none !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] div,
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] span {
+    text-align: left !important;
+    align-self: stretch !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] small {
+    text-align: left !important;
+    align-self: stretch !important;
+}
+
+/* efek saat pointer diarahkan ke area upload */
+section[data-testid="stSidebar"] [data-testid="stFileUploader"]:hover {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,170,70,0.16),
+            rgba(255,120,0,0.06)
+        ) !important;
+    border-color: rgba(255,230,200,0.72) !important;
+    transform: translateY(-2px) !important;
+    box-shadow:
+        0 14px 30px rgba(0,0,0,0.34),
+        0 0 18px rgba(255,140,0,0.12) !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploader"]:hover [data-testid="stFileUploaderDropzone"]::before {
+    transform: translateY(-50%) scale(1.06) !important;
+    box-shadow:
+        0 12px 24px rgba(0,0,0,0.34),
+        0 0 16px rgba(255,170,70,0.18) !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"]:active::before {
+    transform: translateY(-50%) scale(0.97) !important;
+}
+
+
+/* =========================================
+   PLOTLY HISTORY TOOLTIP FINAL
+   Memastikan tooltip histori berwarna coklat
+   dan seluruh teks terbaca putih.
+========================================= */
+.hoverlayer .hovertext rect {
+    fill: #7b4318 !important;
+    stroke: #c18a54 !important;
+}
+
+.hoverlayer .hovertext text,
+.hoverlayer .hovertext tspan {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   PLOTLY TOOLTIP - HISTORI FORECASTING
+========================================= */
+.hoverlayer .hovertext text {
+    fill: #ffffff !important;
+    font-size: 12px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.hoverlayer .hovertext path {
+    stroke: #c18a54 !important;
+    stroke-width: 1px !important;
+    stroke-linejoin: round !important;
+    filter: drop-shadow(0 8px 18px rgba(62, 30, 12, 0.22));
+}
+
+.history-table-title {
+    margin-top: 28px !important;
+}
+
+
+/* =========================================
+   TREND ICON TOTAL AKTUAL - HISTORI FORECAST
+========================================= */
+.trend-up {
+    color: #2e7d32 !important;
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    margin-left: 7px !important;
+}
+
+.trend-down {
+    color: #c62828 !important;
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    margin-left: 7px !important;
+}
+
+.trend-neutral {
+    color: #8b7b70 !important;
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    margin-left: 7px !important;
+}
+
+
+/* =========================================
+   KELOLA DATABASE PAGE
+========================================= */
+.database-page-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 10px 0 24px 0;
+}
+
+.database-page-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #2f80ed, #1b4f9c);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 12px 26px rgba(47,128,237,0.25);
+}
+
+.database-page-title h1 {
+    color: #4e2e1e;
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.database-page-title p {
+    color: #7b5a45;
+    font-size: 16px;
+    margin: 8px 0 0 0;
+}
+
+.database-section-title {
+    color: #4e2e1e;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 28px 0 4px 0;
+}
+
+.database-section-caption {
+    color: #7b5a45;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.database-action-note {
+    color: #6b4b36;
+    background: #fbf2e8;
+    border: 1px solid rgba(92,51,23,0.08);
+    border-radius: 14px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.database-manage-button-spacer {
+    height: 16px;
+}
+
+.delete-dialog-content {
+    text-align: center;
+    padding: 10px 4px 4px 4px;
+}
+
+.delete-dialog-icon {
+    width: 66px;
+    height: 66px;
+    margin: 0 auto 14px auto;
+    border-radius: 22px;
+    background: #fde8e8;
+    color: #c62828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.delete-dialog-title {
+    color: #4e2e1e;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.delete-dialog-subtitle {
+    color: #7b5a45;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Tombol primary dibuat biru untuk aksi database */
+.stButton > button[kind="primary"],
+div[data-testid="stDownloadButton"] > button {
+    background: linear-gradient(135deg, #2f80ed, #1b4f9c) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 20px rgba(47,128,237,0.22) !important;
+    font-weight: 700 !important;
+}
+
+.stButton > button[kind="primary"]:hover,
+div[data-testid="stDownloadButton"] > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 26px rgba(47,128,237,0.30) !important;
+}
+
+/* Data editor database */
+div[data-testid="stDataEditor"] {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 14px !important;
+    border: 1px solid rgba(92,51,23,0.06) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+}
+
+/* =========================================
+   KELOLA DATABASE - REVISI FINAL
+========================================= */
+.database-back-wrapper .stButton > button,
+.database-back-wrapper button {
+    background: linear-gradient(135deg, #8b5a2b, #5c3317) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.08) !important;
+    border-radius: 14px !important;
+    min-height: 48px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 8px 22px rgba(76,38,18,0.22) !important;
+}
+
+.database-back-wrapper .stButton > button:hover,
+.database-back-wrapper button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 28px rgba(76,38,18,0.28) !important;
+}
+
+.database-page-title-clean {
+    margin: 8px 0 24px 0 !important;
+}
+
+.database-page-icon-clean {
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #5c3317 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 34px !important;
+    box-shadow: none !important;
+}
+
+.clean-database-title {
+    margin: 14px 0 4px 0 !important;
+    font-size: 24px !important;
+}
+
+.clean-database-caption {
+    margin-bottom: 12px !important;
+}
+
+/* Data editor dibuat lebih menyatu dengan tema terang-coklat */
+div[data-testid="stDataEditor"] {
+    background: #ffffff !important;
+    border-radius: 24px !important;
+    padding: 14px !important;
+    border: 1px solid rgba(92,51,23,0.08) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+}
+
+/* Beberapa versi Streamlit memakai stDataFrame untuk data_editor */
+div[data-testid="stDataFrame"] {
+    border-radius: 24px !important;
+}
+
+/* Tombol aksi database */
+.database-delete-button + div,
+.database-download-button + div {
+    width: 100% !important;
+}
+
+.database-delete-button ~ div button,
+.database-delete-button button,
+button[aria-label*="Hapus Data Terpilih"] {
+    background: linear-gradient(135deg, #d32f2f, #8b1e1e) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 50px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 10px 24px rgba(198,40,40,0.22) !important;
+}
+
+.database-delete-button ~ div button:hover,
+.database-delete-button button:hover,
+button[aria-label*="Hapus Data Terpilih"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 14px 30px rgba(198,40,40,0.30) !important;
+}
+
+.database-download-button ~ div button,
+.database-download-button button,
+button[aria-label*="Download Excel"] {
+    background: linear-gradient(135deg, #2f80ed, #185abc) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 50px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 10px 24px rgba(47,128,237,0.22) !important;
+}
+
+.database-download-button ~ div button:hover,
+.database-download-button button:hover,
+button[aria-label*="Download Excel"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 14px 30px rgba(47,128,237,0.30) !important;
+}
+
+.database-action-note {
+    min-height: 50px !important;
+    border-radius: 14px !important;
+}
+
+/* =========================================
+   KELOLA DATABASE - FINAL UI REFINEMENT
+========================================= */
+
+/* Tombol Back dipaksa coklat menggunakan container key Streamlit */
+.st-key-db_back_button_container button,
+.st-key-db_back_button_container .stButton > button {
+    background: linear-gradient(135deg, #8b5a2b, #5c3317) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    border-radius: 14px !important;
+    min-height: 52px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 10px 24px rgba(76,38,18,0.26) !important;
+}
+
+.st-key-db_back_button_container button:hover,
+.st-key-db_back_button_container .stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 14px 30px rgba(76,38,18,0.34) !important;
+}
+
+/* Hilangkan background biru di icon judul */
+.database-page-title-no-bg-icon .database-page-icon-clean,
+.database-page-title-clean .database-page-icon-clean {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #5c3317 !important;
+    width: auto !important;
+    height: auto !important;
+    min-width: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    font-size: 34px !important;
+}
+
+/* Tombol hapus merah dan ukuran sama dengan download */
+.st-key-db_delete_button_container button,
+.st-key-db_delete_button_container .stButton > button {
+    background: linear-gradient(135deg, #d63b35, #8b1f1b) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 54px !important;
+    height: 54px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 12px 26px rgba(198,40,40,0.24) !important;
+}
+
+.st-key-db_delete_button_container button:hover,
+.st-key-db_delete_button_container .stButton > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 34px rgba(198,40,40,0.34) !important;
+}
+
+.st-key-db_delete_button_container button:disabled,
+.st-key-db_delete_button_container .stButton > button:disabled {
+    background: linear-gradient(135deg, #e6d7c8, #cdbcae) !important;
+    color: rgba(90,53,34,0.55) !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+}
+
+.st-key-db_download_button_container button,
+.st-key-db_download_button_container div[data-testid="stDownloadButton"] > button {
+    background: linear-gradient(135deg, #2f80ed, #185abc) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 54px !important;
+    height: 54px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 12px 26px rgba(47,128,237,0.24) !important;
+}
+
+.st-key-db_download_button_container button:hover,
+.st-key-db_download_button_container div[data-testid="stDownloadButton"] > button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 34px rgba(47,128,237,0.34) !important;
+}
+
+/* Data editor dibuat lebih dekat dengan tema tabel histori forecasting */
+.st-key-db_editor_container div[data-testid="stDataEditor"],
+.st-key-db_editor_container div[data-testid="stDataFrame"] {
+    background: rgba(255,255,255,0.94) !important;
+    border-radius: 26px !important;
+    padding: 14px !important;
+    border: 1px solid rgba(92,51,23,0.08) !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08) !important;
+    overflow: hidden !important;
+}
+
+/* Streamlit data editor menggunakan canvas, jadi warna utama dipaksa melalui variable Glide jika tersedia */
+.st-key-db_editor_container div[data-testid="stDataEditor"] * {
+    --gdg-bg-cell: #fffaf5 !important;
+    --gdg-bg-cell-medium: #f9f4ee !important;
+    --gdg-bg-header: #7a421d !important;
+    --gdg-bg-header-has-focus: #8b5a2b !important;
+    --gdg-bg-bubble: #8b5a2b !important;
+    --gdg-text-dark: #4e2e1e !important;
+    --gdg-text-medium: #6b4b36 !important;
+    --gdg-text-header: #ffffff !important;
+    --gdg-border-color: rgba(92,51,23,0.10) !important;
+    --gdg-accent-color: #8b5a2b !important;
+    --gdg-accent-light: rgba(139,90,43,0.10) !important;
+}
+
+/* Area kosong editor tidak terlalu gelap */
+.st-key-db_editor_container canvas,
+.st-key-db_editor_container .dvn-scroller,
+.st-key-db_editor_container [data-testid="stDataEditor"] > div {
+    border-radius: 18px !important;
+}
+
+.database-section-title.clean-database-title {
+    color: #4e2e1e !important;
+    font-size: 25px !important;
+    font-weight: 800 !important;
+}
+
+.database-section-caption.clean-database-caption {
+    color: #7b5a45 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.database-action-note {
+    min-height: 54px !important;
+    height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 18px !important;
+    border-radius: 14px !important;
+    background: #fff7ef !important;
+    border: 1px solid rgba(92,51,23,0.08) !important;
+    color: #6b4b36 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================
+   DELETE CONFIRMATION DIALOG - FINAL
+========================================= */
+
+/* Hilangkan judul bawaan dialog Streamlit */
+div[data-testid="stDialog"] h2,
+div[role="dialog"] h2,
+div[aria-modal="true"] h2 {
+    display: none !important;
+}
+
+/* Dialog box */
+div[data-testid="stDialog"] > div,
+div[role="dialog"] > div,
+div[aria-modal="true"] > div {
+    border-radius: 24px !important;
+}
+
+.refined-delete-dialog-content {
+    text-align: center !important;
+    padding: 10px 8px 12px 8px !important;
+}
+
+.refined-delete-dialog-icon {
+    width: 72px !important;
+    height: 72px !important;
+    margin: 0 auto 20px auto !important;
+    border-radius: 22px !important;
+    background: #fde8e8 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 34px !important;
+    box-shadow: none !important;
+}
+
+.refined-delete-dialog-title {
+    color: #ffffff !important;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    margin: 4px 0 10px 0 !important;
+}
+
+.refined-delete-dialog-subtitle {
+    color: rgba(255,255,255,0.88) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    margin-bottom: 22px !important;
+}
+
+/* Tombol Hapus pada modal */
+.st-key-confirm_delete_database_rows button,
+.st-key-fallback_confirm_delete_database_rows button {
+    background: linear-gradient(135deg, #d63b35, #8b1f1b) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 52px !important;
+    height: 52px !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 12px 26px rgba(198,40,40,0.28) !important;
+}
+
+.st-key-confirm_delete_database_rows button:hover,
+.st-key-fallback_confirm_delete_database_rows button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 34px rgba(198,40,40,0.38) !important;
+}
+
+/* Tombol Batal pada modal */
+.st-key-cancel_delete_database_rows button,
+.st-key-fallback_cancel_delete_database_rows button {
+    background: linear-gradient(135deg, #2f80ed, #185abc) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 52px !important;
+    height: 52px !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 12px 26px rgba(47,128,237,0.28) !important;
+}
+
+.st-key-cancel_delete_database_rows button:hover,
+.st-key-fallback_cancel_delete_database_rows button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 34px rgba(47,128,237,0.38) !important;
+}
+
+/* =========================================
+   HISTORY FORECAST TABLE FILTER & SCROLL
+========================================= */
+.history-table-title {
+    margin-top: 18px !important;
+    margin-bottom: 8px !important;
+}
+
+.history-table-empty-state {
+    margin-top: 18px !important;
+    margin-bottom: 18px !important;
+}
+
+.history-table-title + div[data-testid="stVerticalBlock"],
+.history-table-title + div {
+    margin-top: 0 !important;
+}
+
+/* Saat row histori lebih dari 6, tabel memakai height dari Python dan area body bisa discroll */
+.premium-table-wrapper[style*="max-height"] {
+    overflow-y: auto !important;
+}
+
+.premium-table-wrapper[style*="max-height"] .premium-table thead th {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 20 !important;
+}
+
+
+/* =========================================
+   PERSEDIAAN PAGE
+========================================= */
+
+.inventory-page-title {
+    margin-bottom: 26px !important;
+}
+
+.inventory-input-panel {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 22px 24px;
+    border: 1px solid rgba(92,51,23,0.07);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    margin-bottom: 14px;
+}
+
+.inventory-input-title {
+    color: #4e2e1e;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.inventory-input-subtitle {
+    color: #7b5a45;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.inventory-conversion-box {
+    margin-top: 14px !important;
+    margin-bottom: 14px !important;
+}
+
+.inventory-status-card {
+    min-height: 330px;
+}
+
+.inventory-result-grid {
+    margin-top: 16px;
+}
+
+.inventory-note-box {
+    margin-top: 18px;
+    padding: 15px 17px;
+    border-radius: 16px;
+    background: #fff4e8;
+    color: #5b351f;
+    border: 1px solid rgba(92,51,23,0.08);
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.inventory-empty-state {
+    min-height: 320px;
+}
+
+/* radio tambah/ubah pada card stock */
+div[data-testid="stRadio"] label {
+    color: #4e2e1e !important;
+    font-weight: 700 !important;
+}
+
+div[data-testid="stRadio"] p {
+    color: #4e2e1e !important;
+}
+
+div[data-testid="stRadio"] div[role="radiogroup"] {
+    gap: 10px;
+}
+
+div[data-testid="stRadio"] div[role="radiogroup"] label {
+    background: #fff7ef !important;
+    border: 1px solid rgba(92,51,23,0.10) !important;
+    border-radius: 14px !important;
+    padding: 8px 12px !important;
+}
+
+/* tombol pada halaman persediaan */
+button[kind="secondary"] {
+    cursor: pointer !important;
+}
+
+/* =========================================
+   PERSEDIAAN INLINE STOCK FORM
+========================================= */
+.inventory-inline-form-card {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    background: rgba(255,255,255,0.94);
+    border: 1px solid rgba(92,51,23,0.07);
+    border-radius: 22px;
+    padding: 22px 24px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+.inventory-inline-form-title {
+    color: #4e2e1e;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.inventory-inline-form-subtitle {
+    color: #7b5a45;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inventory-inline-conversion-box {
+    margin-top: 14px;
+    margin-bottom: 18px;
+    background: #fff7ef;
+    border: 1px solid rgba(92,51,23,0.08);
+    border-radius: 18px;
+    padding: 18px 20px;
+    color: #5c3317;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.inventory-inline-conversion-box span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a542c;
+    margin-bottom: 5px;
+}
+
+.inventory-inline-conversion-box b {
+    display: block;
+    color: #2f160c;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.inventory-inline-conversion-box small {
+    display: block;
+    color: #7b5a45;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.inventory-inline-conversion-box small b {
+    display: inline;
+    font-size: 13px;
+    color: #4e2e1e;
+}
+
+/* Tombol kecil Tambah/Ubah di bawah card Stock Saat Ini */
+.st-key-inventory_mode_tambah_button button,
+.st-key-inventory_mode_ubah_button button {
+    min-height: 42px !important;
+    border-radius: 14px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12) !important;
+}
+
+.st-key-inventory_mode_tambah_button button {
+    background: #fff8f1 !important;
+    color: #5c3317 !important;
+    border: 1px solid rgba(92,51,23,0.14) !important;
+}
+
+.st-key-inventory_mode_ubah_button button {
+    background: #fff8f1 !important;
+    color: #5c3317 !important;
+    border: 1px solid rgba(92,51,23,0.14) !important;
+}
+
+.st-key-inventory_mode_tambah_button button:hover,
+.st-key-inventory_mode_ubah_button button:hover {
+    transform: translateY(-2px) !important;
+    background: linear-gradient(135deg, #8b5a2b, #5c3317) !important;
+    color: #ffffff !important;
+}
+
+/* Tombol Simpan biru */
+.st-key-inventory_save_button_container button {
+    background: linear-gradient(135deg, #2f80ed, #1d5fd1) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 50px !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 10px 22px rgba(47,128,237,0.28) !important;
+}
+
+.st-key-inventory_save_button_container button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 14px 30px rgba(47,128,237,0.36) !important;
+}
+
+/* Tombol Batal merah */
+.st-key-inventory_cancel_button_container button {
+    background: linear-gradient(135deg, #d63031, #a31616) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 14px !important;
+    min-height: 50px !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 10px 22px rgba(214,48,49,0.28) !important;
+}
+
+.st-key-inventory_cancel_button_container button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 14px 30px rgba(214,48,49,0.36) !important;
+}
+
+
+/* =========================================
+   COMPACT STOCK FORM - DI BAWAH TOMBOL TAMBAH/UBAH
+========================================= */
+.inventory-compact-form-card {
+    margin-top: 14px !important;
+    margin-bottom: 10px !important;
+    background: rgba(255,255,255,0.96) !important;
+    border: 1px solid rgba(92,51,23,0.08) !important;
+    border-radius: 16px !important;
+    padding: 12px 14px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
+}
+
+.inventory-compact-form-title {
+    color: #4e2e1e !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.inventory-compact-conversion-box {
+    margin-top: 10px !important;
+    margin-bottom: 12px !important;
+    background: #fff7ef !important;
+    border: 1px solid rgba(92,51,23,0.08) !important;
+    border-radius: 14px !important;
+    padding: 12px 14px !important;
+    color: #5c3317 !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05) !important;
+}
+
+.inventory-compact-conversion-box span {
+    display: block !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #8a542c !important;
+    margin-bottom: 4px !important;
+}
+
+.inventory-compact-conversion-box b {
+    display: block !important;
+    color: #2f160c !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+}
+
+.inventory-compact-conversion-box small {
+    display: block !important;
+    color: #7b5a45 !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    margin-top: 6px !important;
+    line-height: 1.35 !important;
+}
+
+.inventory-compact-conversion-box small b {
+    display: inline !important;
+    color: #4e2e1e !important;
+    font-size: 11px !important;
+}
+
+/* Supaya input compact tidak terlalu tinggi di area stock */
+.st-key-inventory_compact_save_button_container button,
+.st-key-inventory_compact_cancel_button_container button {
+    min-height: 42px !important;
+    border-radius: 12px !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+}
+
+.st-key-inventory_compact_save_button_container button {
+    background: linear-gradient(135deg, #2f80ed, #1d5fd1) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 8px 18px rgba(47,128,237,0.28) !important;
+}
+
+.st-key-inventory_compact_cancel_button_container button {
+    background: linear-gradient(135deg, #d63031, #a31616) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 8px 18px rgba(214,48,49,0.28) !important;
+}
+
+.st-key-inventory_compact_save_button_container button:hover,
+.st-key-inventory_compact_cancel_button_container button:hover {
+    transform: translateY(-2px) !important;
+}
+
+/* =========================================
+   INVENTORY BROWN STOCK BOX - FINAL
+========================================= */
+.st-key-inventory_brown_form_container {
+    background:
+        linear-gradient(145deg, #8b5a2b 0%, #6f3f1d 48%, #4a2612 100%) !important;
+    border: 1px solid rgba(255, 232, 200, 0.20) !important;
+    border-radius: 18px !important;
+    padding: 18px 18px 16px 18px !important;
+    margin-top: 14px !important;
+    box-shadow:
+        0 14px 30px rgba(72, 34, 15, 0.30),
+        inset 0 1px 0 rgba(255,255,255,0.14) !important;
+    overflow: visible !important;
+}
+
+.st-key-inventory_brown_form_container * {
+    color: #fff7ed !important;
+}
+
+.inventory-brown-form-title {
+    color: #fff7ed !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    margin-bottom: 4px !important;
+}
+
+.inventory-brown-form-caption {
+    color: rgba(255, 247, 237, 0.82) !important;
+    font-size: 11.5px !important;
+    font-weight: 500 !important;
+    line-height: 1.45 !important;
+    margin-bottom: 12px !important;
+}
+
+.st-key-inventory_brown_form_container label,
+.st-key-inventory_brown_form_container [data-testid="stWidgetLabel"],
+.st-key-inventory_brown_form_container [data-testid="stWidgetLabel"] p {
+    color: #fff7ed !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+}
+
+.st-key-inventory_brown_form_container input {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.st-key-inventory_brown_form_container [data-testid="stNumberInput"] input {
+    background: #1f2029 !important;
+    border: 1px solid rgba(255,255,255,0.14) !important;
+    border-radius: 12px !important;
+    min-height: 43px !important;
+}
+
+.st-key-inventory_brown_form_container div[data-baseweb="select"] {
+    background:
+        linear-gradient(90deg, rgba(255,255,255,0.20), rgba(255,255,255,0.10)) !important;
+    border: 1px solid rgba(255,255,255,0.18) !important;
+    border-radius: 12px !important;
+    min-height: 43px !important;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.20) !important;
+}
+
+.st-key-inventory_brown_form_container div[data-baseweb="select"] span {
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+}
+
+.st-key-inventory_brown_form_container div[data-baseweb="select"] svg {
+    color: #ffffff !important;
+}
+
+.inventory-brown-conversion-box {
+    background: rgba(255,255,255,0.12) !important;
+    border: 1px solid rgba(255,255,255,0.16) !important;
+    border-radius: 14px !important;
+    padding: 13px 14px !important;
+    margin: 12px 0 13px 0 !important;
+    color: #fff7ed !important;
+}
+
+.inventory-brown-conversion-box span {
+    display: block !important;
+    color: rgba(255,247,237,0.82) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    margin-bottom: 4px !important;
+}
+
+.inventory-brown-conversion-box b {
+    display: block !important;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+}
+
+.inventory-brown-conversion-box small {
+    display: block !important;
+    color: rgba(255,247,237,0.84) !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    margin-top: 6px !important;
+}
+
+.inventory-brown-conversion-box small b {
+    display: inline !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+}
+
+.st-key-inventory_compact_save_button_container button {
+    background: linear-gradient(135deg, #2f80ed, #185ec8) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    min-height: 44px !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 8px 18px rgba(47,128,237,0.28) !important;
+}
+
+.st-key-inventory_compact_cancel_button_container button {
+    background: linear-gradient(135deg, #df3434, #a71919) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    min-height: 44px !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 8px 18px rgba(223,52,52,0.28) !important;
+}
+
+/* Hide previous white compact form styles if any remain */
+.inventory-compact-form-card,
+.inventory-compact-conversion-box {
+    display: none !important;
+}
+
+/* =========================================
+   INVENTORY STOCK INPUT FORMAT - FINAL
+   Text input dengan ribuan titik dan selectbox lebih lebar
+========================================= */
+.st-key-inventory_brown_form_container [data-testid="stTextInput"] input {
+    background: #1f2029 !important;
+    border: 1px solid rgba(255,255,255,0.16) !important;
+    border-radius: 12px !important;
+    min-height: 43px !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.2px !important;
+    padding-left: 14px !important;
+}
+
+.st-key-inventory_brown_form_container [data-testid="stTextInput"] input::placeholder {
+    color: rgba(255,255,255,0.42) !important;
+    font-weight: 600 !important;
+}
+
+.st-key-inventory_brown_form_container [data-testid="stTextInput"] input:focus {
+    border: 1px solid rgba(255,214,167,0.65) !important;
+    box-shadow: 0 0 0 2px rgba(255,214,167,0.12) !important;
+}
+
+/* Perlebar dan perjelas selectbox satuan */
+.st-key-inventory_brown_form_container div[data-baseweb="select"] {
+    min-width: 112px !important;
+    width: 100% !important;
+    background: linear-gradient(90deg, rgba(255,255,255,0.22), rgba(255,255,255,0.12)) !important;
+    border: 1px solid rgba(255,214,167,0.35) !important;
+    border-radius: 12px !important;
+}
+
+.st-key-inventory_brown_form_container div[data-baseweb="select"] > div {
+    padding-left: 12px !important;
+    padding-right: 8px !important;
+}
+
+.st-key-inventory_brown_form_container div[data-baseweb="select"] span {
+    color: #ffffff !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    max-width: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: nowrap !important;
+}
+
+.st-key-inventory_brown_form_container div[data-baseweb="select"] svg {
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: 4px !important;
+}
+
+/* =========================================
+   INVENTORY STOCK INDICATOR
+========================================= */
+.inventory-indicator-card {
+    margin-top: 34px;
+    margin-bottom: 28px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 26px;
+    padding: 28px 30px 26px;
+    border: 1px solid rgba(92,51,23,0.08);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+    overflow: visible;
+}
+
+.inventory-indicator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.inventory-indicator-header h3 {
+    margin: 0 0 6px 0;
+    color: #4e2e1e;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.inventory-indicator-header p {
+    margin: 0;
+    color: #7b5a45;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.inventory-status-pill {
+    min-width: 155px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 9px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.inventory-status-pill.safe { background: linear-gradient(135deg, #1f9d4e, #0f7e38); }
+.inventory-status-pill.warning { background: linear-gradient(135deg, #f2b705, #c48200); }
+.inventory-status-pill.danger { background: linear-gradient(135deg, #d63031, #991b1b); }
+.inventory-status-pill.overstock { background: linear-gradient(135deg, #c0392b, #7a1616); }
+
+.inventory-bar-area {
+    position: relative;
+    height: 165px;
+    margin: 8px 8px 0;
+    padding-top: 70px;
+    overflow: visible;
+}
+
+.inventory-gradient-bar {
+    position: relative;
+    height: 34px;
+    border-radius: 999px;
+    background: linear-gradient(90deg,
+        #ff3b12 0%,
+        #ff7a00 10%,
+        #fff200 23%,
+        #00f02d 50%,
+        #fff200 78%,
+        #ff7a00 91%,
+        #ff2b18 100%
+    );
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.45), 0 9px 22px rgba(0,0,0,0.12);
+}
+
+.inventory-marker {
+    position: absolute;
+    top: 4px;
+    transform: translateX(-50%);
+    min-width: 88px;
+    text-align: center;
+    z-index: 5;
+}
+
+.inventory-marker .marker-value {
+    color: #2f160c;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.triangle.down {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 32px solid #333;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.15));
+}
+
+.marker-stockout .triangle.down { border-top-color: #141414; }
+.marker-safety .triangle.down { border-top-color: #7f7f7f; }
+.marker-minimum .triangle.down { border-top-color: #ead800; }
+.marker-maximum .triangle.down { border-top-color: #d82020; }
+.marker-current .triangle.down { border-top-color: #6b3a16; }
+
+.marker-current {
+    top: -14px;
+}
+
+.marker-current .marker-value {
+    font-size: 17px;
+    color: #5c3317;
+}
+
+.marker-current .current-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px auto 0;
+    background: #6b3a16;
+    border: 2px solid rgba(255,255,255,0.75);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.18);
+}
+
+.inventory-bar-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #20120b;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 14px;
+    padding: 0 2px;
+}
+
+.inventory-legend-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    margin-top: 14px;
+    color: #6b4b36;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+
+.legend-color.black { background: #141414; }
+.legend-color.grey { background: #7f7f7f; }
+.legend-color.yellow { background: #ead800; }
+.legend-color.brown { background: #6b3a16; }
+.legend-color.red { background: #d82020; }
+
+.inventory-status-message {
+    margin-top: 18px;
+    border-radius: 16px;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.inventory-status-message.safe {
+    color: #176b34;
+    background: #e9f8ea;
+    border: 1px solid rgba(23,107,52,0.14);
+}
+
+.inventory-status-message.warning {
+    color: #7a4a00;
+    background: #fff5d7;
+    border: 1px solid rgba(196,130,0,0.18);
+}
+
+.inventory-status-message.danger {
+    color: #8b1515;
+    background: #ffe9e9;
+    border: 1px solid rgba(214,48,49,0.18);
+}
+
+.inventory-status-message.overstock {
+    color: #7a1616;
+    background: #ffecec;
+    border: 1px solid rgba(192,57,43,0.18);
+}
+
+.inventory-recommendation-box {
+    margin-top: 14px;
+    background: #fff7ef;
+    border: 1px solid rgba(92,51,23,0.09);
+    border-radius: 18px;
+    padding: 16px 18px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.inventory-recommendation-box.overstock-note {
+    background: #fff0f0;
+    border-color: rgba(214,48,49,0.16);
+}
+
+.inventory-recommendation-title {
+    color: #4e2e1e;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.inventory-recommendation-value {
+    color: #2f160c;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+
+.inventory-recommendation-text {
+    color: #6b4b36;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.inventory-indicator-empty {
+    color: #6b4b36;
+    background: #fff7ef;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    .inventory-indicator-card {
+        padding: 22px 18px;
+    }
+
+    .inventory-indicator-header {
+        flex-direction: column;
+    }
+
+    .inventory-marker .marker-value {
+        font-size: 12px;
+    }
+
+    .triangle.down {
+        border-left-width: 12px;
+        border-right-width: 12px;
+        border-top-width: 24px;
+    }
+
+    .inventory-bar-labels {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   INVENTORY INDICATOR REVISION
+   - marker stock saat ini tidak melebar keluar bar
+   - label menggunakan satuan Gram
+   - form tambah/ubah dibuat floating supaya indikator tidak terdorong turun
+========================================= */
+.inventory-marker {
+    min-width: 118px !important;
+}
+
+.inventory-marker .marker-value {
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+}
+
+.marker-current .marker-value {
+    font-size: 14px !important;
+    font-weight: 900 !important;
+}
+
+.inventory-recommendation-subvalue {
+    color: #4e2e1e;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 2px 0 8px 0;
+}
+
+/* form stock tetap tepat di bawah tombol, tetapi tidak menambah tinggi baris kartu */
+.st-key-inventory_brown_form_container {
+    position: absolute !important;
+    width: 318px !important;
+    z-index: 1000 !important;
+    margin-top: 14px !important;
+}
+
+/* beri ruang visual ringan agar form floating tidak menutupi area bawah saat layar kecil */
+@media screen and (max-width: 1200px) {
+    .st-key-inventory_brown_form_container {
+        position: relative !important;
+        width: 100% !important;
+    }
+}
+
+/* =========================================
+   INVENTORY FORM FLOATING FIX
+   Form Tambah/Ubah tidak mendorong indikator ke bawah
+========================================= */
+.st-key-inventory_brown_form_container {
+    position: absolute !important;
+    z-index: 80 !important;
+    width: 300px !important;
+    max-width: 300px !important;
+}
+
+/* =========================================
+   COVERAGE FORECAST ARROW CHART
+========================================= */
+.coverage-forecast-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 28px 30px 26px 30px;
+    margin-top: 26px;
+    border: 1px solid rgba(92, 51, 23, 0.06);
+    box-shadow: 0 14px 34px rgba(0,0,0,0.08);
+}
+
+.coverage-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.coverage-header h3 {
+    margin: 0 0 8px 0;
+    color: #4e2e1e;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.coverage-header p {
+    margin: 0;
+    color: #7b5a45;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.coverage-available-pill {
+    background: #fbf2e8;
+    color: #5c3317;
+    border: 1px solid rgba(92, 51, 23, 0.10);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+}
+
+.coverage-available-pill b {
+    color: #32170b;
+    font-weight: 900;
+}
+
+.coverage-arrow-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    align-items: start;
+    margin-top: 8px;
+}
+
+.coverage-arrow-item {
+    min-width: 0;
+}
+
+.coverage-week-label {
+    color: #3b1f12;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 8px 4px;
+}
+
+.coverage-arrow-shape {
+    min-height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 32px 18px 18px;
+    color: #201106;
+    clip-path: polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%, 13% 50%);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+}
+
+.coverage-arrow-item:first-child .coverage-arrow-shape {
+    clip-path: polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%, 0 0);
+}
+
+.coverage-safe .coverage-arrow-shape {
+    background: linear-gradient(135deg, #00f038, #00c92f);
+}
+
+.coverage-warning .coverage-arrow-shape {
+    background: linear-gradient(135deg, #fff200, #e7d900);
+}
+
+.coverage-danger .coverage-arrow-shape {
+    background: linear-gradient(135deg, #df202d, #b51420);
+    color: #ffffff;
+}
+
+.coverage-arrow-content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.coverage-arrow-content span {
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.88;
+}
+
+.coverage-arrow-content b {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 6px;
+}
+
+.coverage-date-range {
+    text-align: center;
+    color: #5c3317;
+    font-size: 12.5px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.coverage-note {
+    margin-top: 22px;
+    border-radius: 16px;
+    padding: 15px 18px;
+    font-size: 14px;
+    font-weight: 800;
+    border: 1px solid rgba(92, 51, 23, 0.08);
+}
+
+.coverage-note.safe {
+    background: #eaf8de;
+    color: #286e21;
+}
+
+.coverage-note.warning {
+    background: #fff8d9;
+    color: #8a5a00;
+}
+
+.coverage-note.danger {
+    background: #ffe8e8;
+    color: #9e1515;
+}
+
+@media screen and (max-width: 1200px) {
+    .coverage-arrow-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .coverage-header {
+        flex-direction: column;
+    }
+
+    .coverage-arrow-row {
+        grid-template-columns: 1fr;
+    }
+
+    .coverage-arrow-shape,
+    .coverage-arrow-item:first-child .coverage-arrow-shape {
+        clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    }
+}
+
+/* =========================================
+   INVENTORY RECOMMENDED MODEL BADGE
+========================================= */
+.inventory-recommendation-model-badge {
+    margin-top: 18px !important;
+    max-width: 280px !important;
+    margin-left: auto !important;
+}
+
+.inventory-empty-state {
+    margin-top: 28px !important;
+}
+
+
+/* =========================================
+   FRIENDLY DATABASE ERROR
+========================================= */
+.database-error-friendly {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #fff1f1;
+    border: 1px solid rgba(214,48,49,0.22);
+    border-radius: 18px;
+    padding: 18px 20px;
+    color: #7a1d1d;
+    box-shadow: 0 10px 26px rgba(214,48,49,0.08);
+    margin: 18px 0;
+}
+
+.database-error-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #ffdada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.database-error-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.database-error-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inventory-history-title {
+    margin-top: 26px !important;
+    margin-bottom: 14px !important;
+}
