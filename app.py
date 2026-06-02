@@ -2424,14 +2424,14 @@ def render_inventory_history_table(selected_kopi, model_name=None):
             st.error(str(exc))
         return
 
-    st.markdown(
-        """
+    if history_df.empty:
+        st.markdown(
+            """
 <div class="forecast-section-title inventory-history-title">📦 Tabel Historis Persediaan (Takaran Gram)</div>
 """,
-        unsafe_allow_html=True
-    )
+            unsafe_allow_html=True
+        )
 
-    if history_df.empty:
         st.markdown(
             """
 <div class="empty-upload-state history-table-empty-state">
@@ -2444,11 +2444,121 @@ def render_inventory_history_table(selected_kopi, model_name=None):
         )
         return
 
-    display_df = history_df.copy()
-    display_df["forecast_date"] = pd.to_datetime(
-        display_df["forecast_date"],
+    history_df = history_df.copy()
+    history_df["forecast_date"] = pd.to_datetime(
+        history_df["forecast_date"],
         errors="coerce"
     )
+
+    month_options = [
+        "All",
+        "Januari",
+        "Februari",
+        "Maret",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Agustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember"
+    ]
+
+    month_mapping = {
+        "Januari": 1,
+        "Februari": 2,
+        "Maret": 3,
+        "April": 4,
+        "Mei": 5,
+        "Juni": 6,
+        "Juli": 7,
+        "Agustus": 8,
+        "September": 9,
+        "Oktober": 10,
+        "November": 11,
+        "Desember": 12
+    }
+
+    inventory_year_options = ["All"] + sorted(
+        history_df["forecast_date"]
+        .dt.year
+        .dropna()
+        .astype(int)
+        .astype(str)
+        .unique()
+        .tolist(),
+        reverse=True
+    )
+
+    title_col, month_filter_col, year_filter_col = st.columns([2.4, 1, 1])
+
+    with title_col:
+        st.markdown(
+            """
+<div class="forecast-section-title inventory-history-title">📦 Tabel Historis Persediaan (Takaran Gram)</div>
+""",
+            unsafe_allow_html=True
+        )
+
+    with month_filter_col:
+        st.markdown(
+            """
+<div class="history-filter-label inventory-history-filter-label">Bulan</div>
+""",
+            unsafe_allow_html=True
+        )
+
+        selected_inventory_month = st.selectbox(
+            "Bulan Historis Persediaan",
+            month_options,
+            index=0,
+            label_visibility="collapsed",
+            key=f"inventory_history_month_{selected_kopi}_{model_name if model_name else 'all'}"
+        )
+
+    with year_filter_col:
+        st.markdown(
+            """
+<div class="history-filter-label inventory-history-filter-label">Tahun</div>
+""",
+            unsafe_allow_html=True
+        )
+
+        selected_inventory_year = st.selectbox(
+            "Tahun Historis Persediaan",
+            inventory_year_options,
+            index=0,
+            label_visibility="collapsed",
+            key=f"inventory_history_year_{selected_kopi}_{model_name if model_name else 'all'}"
+        )
+
+    display_df = history_df.copy()
+
+    if selected_inventory_month != "All":
+        display_df = display_df[
+            display_df["forecast_date"].dt.month == month_mapping[selected_inventory_month]
+        ]
+
+    if selected_inventory_year != "All":
+        display_df = display_df[
+            display_df["forecast_date"].dt.year.astype(str) == selected_inventory_year
+        ]
+
+    if display_df.empty:
+        st.markdown(
+            """
+<div class="empty-upload-state history-table-empty-state">
+    <div class="empty-upload-icon">📦</div>
+    <div class="empty-upload-title">Data Tidak Ditemukan</div>
+    <div class="empty-upload-subtitle">Tidak ada riwayat persediaan sesuai filter bulan dan tahun yang dipilih.</div>
+</div>
+""",
+            unsafe_allow_html=True
+        )
+        return
+
     display_df = display_df.sort_values(["forecast_date", "created_at"]).reset_index(drop=True)
 
     if "actual_total" not in display_df.columns:
@@ -2461,10 +2571,12 @@ def render_inventory_history_table(selected_kopi, model_name=None):
         display_df["actual_total"],
         errors="coerce"
     ).fillna(0)
+
     display_df["stock"] = pd.to_numeric(
         display_df["stock"],
         errors="coerce"
     ).fillna(0)
+
     display_df["actual_change"] = display_df["actual_total"].diff()
 
     def format_actual_with_icon(row):
@@ -2490,6 +2602,7 @@ def render_inventory_history_table(selected_kopi, model_name=None):
     })
 
     table_height = 390 if len(table_df) > 6 else None
+
     render_premium_table(
         table_df,
         height=table_height,
